@@ -1,0 +1,93 @@
+
+.wp-list-table {
+  .ss-sponsorship-status {
+    display: inline-block;
+    background: rgba( 0, 0, 0, 0.1 );
+    padding: 0.1em 1em;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+    &.status-paid {
+      background: $green;
+      color: $white;
+    }
+
+    &.status-rejected {
+      background: $red;
+      color: $white;
+    }
+
+    &.status-approved{
+      background: $purple;
+      color: $white;
+    }
+
+    &.status-request{
+      background: $yellow;
+    }
+  }
+}
+
+#packages_row {
+  > td { padding: 0; }
+}
+.ss-items {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba( 255, 255, 255, 0.5 );
+
+  .item-amount {
+    width: 100px;
+    text-align: right;
+  }
+
+  .item-qty {
+    width: 50px;
+    text-align: center;
+  }
+
+  .item-actions {
+    width: 100px;
+    text-align: right;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  .button {
+    &.dashicons {
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      padding: 0;
+
+      &:before {
+        width: 100%;
+        height: 100%;
+        line-height: 30px;
+        display: block;
+      }
+    }
+  }
+
+  td {
+    border-bottom: 1px solid rgba( 0, 0, 0, 0.15 );
+    padding: 1em;
+  }
+
+  thead {
+    th {
+      background: rgba( 0, 0, 0, 0.1 );
+      padding: 0.5em 1em;
+    }
+  }
+
+  tfoot {
+    font-weight:bold;
+    .ss-items-total {
+      text-align: center;
+    }
+  }
+
+
+}

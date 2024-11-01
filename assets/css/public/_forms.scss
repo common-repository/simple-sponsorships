@@ -1,0 +1,119 @@
+.ss-hidden {
+  display: none;
+}
+
+.ss-form-field {
+  input:not([type=checkbox]):not([type=radio]),
+  textarea,
+  select {
+    width: 100%;
+  }
+
+  .ss-file-input {
+    background: rgba( 0, 0, 0, 0.05 );
+    padding: 1em;
+    cursor: pointer;
+  }
+
+  &.ss-form-field-package_select {
+    .packages-select {
+      .packages-select-header,
+      .packages-select-items .package-item {
+        display: flex;
+
+        .package-column,
+        .qty-column,
+        .price-column {
+          padding: 10px;
+          font-size: 0.875em;
+        }
+
+        .package-column {
+          width: 50%;
+        }
+
+        .qty-column {
+          width: 20%;
+          text-align: center;
+        }
+
+        .price-column {
+          width: 30%;
+          text-align: right;
+        }
+      }
+    }
+
+    .packages-select-header {
+      background: $grey;
+
+      .package-column,
+      .qty-column,
+      .price-column {
+        height: 40px;
+        line-height: 20px;
+      }
+    }
+
+    .packages-select-items {
+      .package-item {
+        border-bottom: 1px solid $grey;
+
+        .qty-column {
+          input {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            width: 60px;
+          }
+        }
+      }
+    }
+
+    .packages-select-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      font-size: 0.875em;
+      font-weight: 600;
+    }
+  }
+}
+
+.ss-form-sponsor-content-container {
+  background: rgba( 0, 0, 0, 0.05 );
+  padding: 1em;
+  margin-bottom: 1em;
+
+  > strong {
+    display: block;
+    color: #999;
+    text-transform: uppercase;
+    font-size: .75em;
+    text-align: center;
+  }
+
+  .wp-post-image {
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+  }
+
+  .ss-content-title {
+    margin: 0 0 1em 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
